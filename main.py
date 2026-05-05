@@ -14,6 +14,12 @@ from pdf_processor import SEBIPDFProcessor
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+app = FastAPI()
+
+@app.get("/")
+def home():
+    return {"message": "Hello, SEBI LLM is live!"}
+
 app = FastAPI(
     title="SEBI Investment Risk Analysis API",
     description="Analyze SEBI fraud orders for investment risk",
