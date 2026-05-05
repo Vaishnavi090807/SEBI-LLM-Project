@@ -45,6 +45,8 @@ black==23.11.0
 flake8==6.1.0
 isort==5.12.0
 
+watchdog==3.0.0
+
 langchain==0.0.350
 
 # Frontend (separate package.json)
